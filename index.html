@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Hero section background */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1581091215364-1f331fa23032?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Tech Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold">Innovative Tech Solutions for Your Business</h1>
+            <p class="lead mb-4">We provide cutting-edge IT services and solutions to help your business grow</p>
+            <a href="#services" class="btn btn-lg btn-light fw-bold">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.FWt8KEMzwba140tFHSS1-AHaEw?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded shadow" alt="About Tech Solutions">
+            </div>
+            <div class="col-md-6">
+                <p class="fs-5">Tech Solutions is a forward-thinking IT company dedicated to providing businesses with innovative technology solutions. We specialize in cloud computing, cybersecurity, software development, and IT consulting.</p>
+                <p class="fs-5">Our mission is to empower businesses with technology that enhances efficiency, security, and growth. Our expert team is committed to delivering reliable and customized solutions to every client.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-cloud-fill display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Cloud Solutions</h5>
+                            <p class="card-text">Secure and scalable cloud services to optimize your business operations.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-shield-lock-fill display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Protect your data and infrastructure with our advanced security solutions.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Custom software and applications built to meet your business needs.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4">
+        <p class="mb-1">© 2026 Tech Solutions</p>
+        <div>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
